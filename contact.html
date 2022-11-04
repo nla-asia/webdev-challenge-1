@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <script src="contact.js" defer></script>
+    <title>contact</title>
+</head>
+<body>
+    <div class="contact-wrapper">
+        <h3 class="contact-form-header">Contact Us</h3>
+        <form class="contact-form" id="contactForm">
+            <div class="contact-form-control">
+                <label>Name</label>
+                <input type="text" id="name" placeholder="min 5 characters in length" required autofocus />
+                <span class="error" id="nameErr">Your name must be above 5 characters.</span>
+            </div>
+            <div class="contact-form-control">
+                <label>Subject</label>
+                <input type="text" id="subject" placeholder="min 5 characters in length" required />
+                <span class="error" id="subjectErr">Your subject must be above 5 characters.</span>
+            </div>
+            <div class="contact-form-control">
+                <label>Email</label>
+                <input type="email" id="email" placeholder="example@example.com" required />
+                <span class="error" id="emailErr">Enter a valid email address.</span>
+            </div>
+            <div class="contact-form-control">
+                <label>Message</label>
+                <textarea id="message" placeholder="min 15 characters and max 200 characters" required></textarea>
+                <span class="error" id="messageErr">Your message must be between 15 and 200 characters.</span>
+            </div>
+
+            <div class="contact-form-control">
+                <button type="submit" class="contact-btn" id="contactBtn">Send</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
